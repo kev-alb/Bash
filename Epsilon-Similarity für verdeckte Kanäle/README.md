@@ -1,0 +1,1 @@
+Die Bash-Skripte hier erweitern ein bestehendes (noch nicht öffentlich zugängliches) Software-Tool (NeFiAS) zur verteilten Anaylse von Netzwerkverkehr. Mit den Skripten ist die Berechnung und Detektion der Epsilon-Similarity für verdeckte IP-Kanäle möglich. Die Skripte sind Teil meiner Bachelorarbeit in Informatik an der FernUni Hagen.
