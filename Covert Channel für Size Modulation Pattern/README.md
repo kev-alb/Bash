@@ -1,5 +1,8 @@
 Implementierung eines einfachen Covert Channels auf Basis des Size Modulation Patterns. (Es wird das Programm ncat benötigt.)
+
 Siehe das Bash-Skript "Covert_Channel_UTF8_1000_1001_TheQuickBrown_ncat.sh" für die genaue Funktionsweise des Channels.
+
+(Die Datei "Nachricht_Klartext.txt" dient nur der Information und enthält die zu kodierende Nachricht, ist aber für die Erzeugung des Covert Channels nicht wichtig.)
 
 Der Covert Channel mit Size Modulation Pattern enthält Pakete der Größen 1000 und 1001 Byte.
 
