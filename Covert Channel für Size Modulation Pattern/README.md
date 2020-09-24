@@ -7,6 +7,7 @@ Siehe das Bash-Skript "Covert_Channel_UTF8_1000_1001_TheQuickBrown_ncat.sh" für
 Der Covert Channel mit Size Modulation Pattern enthält Pakete der Größen 1000 und 1001 Byte (kann aber auch geändert werden).
 
 Der Sender ist 192.168.0.46
+
 Der Empänger ist 192.168.0.206
 
 1. Schritt: In Terminal des Empfängers Kommando zum Aufzeichnen der Pakete, die vom Sender kommen.
