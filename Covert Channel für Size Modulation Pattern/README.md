@@ -10,7 +10,7 @@ Der Sender ist 192.168.0.46
 
 Der Empänger ist 192.168.0.206
 
-1. Schritt: In Terminal des Empfängers Kommando zum Aufzeichnen der Pakete, die vom Sender kommen.
+1. Schritt: In Terminal des Empfängers Kommando zum Aufzeichnen der Pakete, die vom Sender kommen:
 
 sudo tshark -i wlp14s0 -a packets 3000 -w Size_Mod_Channel.pcap -f "tcp and src host 192.168.0.46"
 
