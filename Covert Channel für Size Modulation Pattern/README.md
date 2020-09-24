@@ -4,7 +4,7 @@ Siehe das Bash-Skript "Covert_Channel_UTF8_1000_1001_TheQuickBrown_ncat.sh" für
 
 (Die Datei "Nachricht_Klartext.txt" dient nur der Information und enthält die zu kodierende Nachricht, ist aber für die Erzeugung des Covert Channels nicht wichtig.)
 
-Der Covert Channel mit Size Modulation Pattern enthält Pakete der Größen 1000 und 1001 Byte.
+Der Covert Channel mit Size Modulation Pattern enthält Pakete der Größen 1000 und 1001 Byte (kann aber auch geändert werden).
 
 Der Sender ist 192.168.0.46
 Der Empänger ist 192.168.0.206
