@@ -1,26 +1,3 @@
-Implementierung eines einfachen Covert Channels auf Basis des Size Modulation Patterns. (Es wird das Programm ncat benötigt.)
+This folder contains all files and scripts to impelement a covert channel of the [Size Modulation](http://ih-patterns.blogspot.com/p/p1-size-modulation-pattern.html) hiding pattern. The covert channel mainly relies on `ncat`. See the [approach description](https://github.com/kev-alb/Bash/blob/master/Covert%20Channel%20für%20Size%20Modulation%20Pattern/Description_of_the_approach.txt) for more details.
 
-Siehe das Bash-Skript "Covert_Channel_UTF8_1000_1001_TheQuickBrown_ncat.sh" für die genaue Funktionsweise des Channels.
-
-(Die Datei "Nachricht_Klartext.txt" dient nur der Information und enthält die zu kodierende Nachricht, ist aber für die Erzeugung des Covert Channels nicht wichtig.)
-
-Der Covert Channel mit Size Modulation Pattern enthält Pakete der Größen 1000 und 1001 Byte (kann aber auch geändert werden).
-
-Der Sender ist 192.168.0.46
-
-Der Empänger ist 192.168.0.206
-
-1. Schritt: Im Terminal des Empfängers Kommando zum Aufzeichnen der Pakete, die vom Sender kommen:
-
-sudo tshark -i wlp14s0 -a packets 3000 -w Size_Mod_Channel.pcap -f "tcp and src host 192.168.0.46"
-
-2. Schritt: Im 2. Terminal des Empfängers mit ncat lauschen:
-
-ncat -v -l 9999
-
-3. Schritt: Im Terminal des Senders:
-
-ncat -v 192.168.0.206 9999 -e Covert_Channel_UTF8_1000_1001_TheQuickBrown_ncat.sh
-
-
-Channel bzw. Flow läuft und wird aufgezeichnet.
+Additionally, the file [Size_Mod_1000_1001_300ms_0925_1800.pcap.csv](https://github.com/kev-alb/Bash/blob/master/Covert%20Channel%20für%20Size%20Modulation%20Pattern/Size_Mod_1000_1001_300ms_0925_1800.pcap.csv) is a recording of such a channel. This file contains only packets with payload sizes of 1,000 and 1,001 bytes (excluding the packets of the TCP handshake).
